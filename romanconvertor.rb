@@ -10,7 +10,7 @@ def fromRoman(romanNumber)
         end
     end
     
-    #check if roman number is not lowercase; if it is, end with TypeError
+    #check if roman number is lowercase; if it is, end with TypeError
     if romanNumber.match(/[a-z]/)
         raise TypeError
     end
@@ -82,7 +82,7 @@ end
 
 def toRoman(arabicNumber)
     
-    #check if arabic number is within 1-3999 range; if it is, end with RangeError
+    #check if arabic number is outside 1-3999 range; if it is, end with RangeError
     if arabicNumber < 1 or arabicNumber > 3999
         raise RangeError
     end
